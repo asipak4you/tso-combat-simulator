@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- © 2026 Dennis Thielsch – Alle Rechte vorbehalten / All rights reserved.
+     Kein Kopieren/Verändern ohne schriftliche Genehmigung. Siehe LICENSE. -->
+<html lang="de">
+<head>
+<base href="/" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mein Profil – Die Siedler Online Kampfsimulator</title>
+<meta name="description" content="Lege deine Generäle samt Talenten und deine verfügbaren Einheiten an – als Grundlage für den Abenteuer-Planer des Siedler-Online-Kampfsimulators." />
+<meta name="robots" content="noindex" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="./style.css?v=20260628111218" />
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <h1 id="title">Mein Profil</h1>
+    <div class="lang">
+      <button class="flag" id="lang-de" title="Deutsch">🇩🇪</button>
+      <button class="flag" id="lang-en" title="English">🇬🇧</button>
+      <button class="flag" id="lang-pl" title="Polski">🇵🇱</button>
+    </div>
+  </div>
+  <nav class="nav" id="nav"></nav>
+
+  <div class="beta" id="betanote"></div>
+
+  <div class="pbar">
+    <button class="pbtn" id="exportbtn"></button>
+    <button class="pbtn" id="importbtn"></button>
+    <input type="file" id="importfile" accept="application/json" hidden />
+  </div>
+
+  <div class="panel">
+    <div class="ph3"><span id="unitshead"></span></div>
+    <div id="units"></div>
+  </div>
+
+  <div class="ph3" style="margin-top:18px"><span id="generalshead"></span>
+    <button class="pbtn prim" id="addgen"></button></div>
+  <div id="generals"></div>
+
+  <div class="foot">
+    <a href="impressum.html" id="imprintlink">Impressum</a> ·
+    <a href="datenschutz.html" id="privacylink">Datenschutz</a>
+  </div>
+</div>
+<div id="tip" class="tip" hidden></div>
+<script type="module" src="./profil.js?v=20260628111218"></script>
+</body>
+</html>

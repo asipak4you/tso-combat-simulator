@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- © 2026 Dennis Thielsch – Alle Rechte vorbehalten / All rights reserved.
+     Kein Kopieren/Verändern ohne schriftliche Genehmigung. Siehe LICENSE. -->
+<html lang="de">
+<head>
+<base href="/" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Abenteuer-Planer – Die Siedler Online Kampfsimulator</title>
+<meta name="description" content="Wähle ein Abenteuer und finde pro Lager die beste Aufstellung mit deinen Generälen und Einheiten – aus der Hall of Fame und per lokaler Berechnung." />
+<meta name="robots" content="noindex" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="./style.css?v=20260628111218" />
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <h1 id="title">Abenteuer-Planer</h1>
+    <div class="lang">
+      <button class="flag" id="lang-de" title="Deutsch">🇩🇪</button>
+      <button class="flag" id="lang-en" title="English">🇬🇧</button>
+      <button class="flag" id="lang-pl" title="Polski">🇵🇱</button>
+    </div>
+  </div>
+  <nav class="nav" id="nav"></nav>
+
+  <div class="beta" id="betanote"></div>
+  <div class="beta" id="noprofile" hidden></div>
+
+  <div id="advmap"></div>
+
+  <div class="panel">
+    <div class="genrow"><span class="nm" id="advlabel">Abenteuer</span>
+      <span class="advbox"><input id="advsearch" type="search" placeholder="Abenteuer suchen…"><select id="adv"></select></span></div>
+    <div class="genrow"><span class="nm" id="filterlabel"></span><span id="modebadge"></span></div>
+    <div id="filter"></div>
+  </div>
+
+  <div class="plan-bar">
+    <label class="sg-filter"><input type="checkbox" id="selall" checked><span id="selalllabel"></span></label>
+    <button class="go" id="compute" style="width:auto"></button>
+    <button class="cancel-btn" id="cancel" hidden></button>
+  </div>
+
+  <div id="camps"></div>
+
+  <div class="foot">
+    <a href="impressum.html" id="imprintlink">Impressum</a> ·
+    <a href="datenschutz.html" id="privacylink">Datenschutz</a>
+  </div>
+</div>
+<div id="tip" class="tip" hidden></div>
+<script type="module" src="./planer.js?v=20260628111218"></script>
+</body>
+</html>

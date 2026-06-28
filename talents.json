@@ -1,0 +1,755 @@
+{
+ "DescreaseBossHP": {
+  "name": "Overrun",
+  "desc": "Decreases HP of enemy bosses by {0}%.",
+  "icon": "Overrun2.png",
+  "minLevel": 26,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "hp",
+     "sd": 1,
+     "tg": "Boss",
+     "m": 0.92,
+     "a": 0.0
+    }
+   ],
+   [
+    {
+     "it": "hp",
+     "sd": 1,
+     "tg": "Boss",
+     "m": 0.84,
+     "a": 0.0
+    }
+   ],
+   [
+    {
+     "it": "hp",
+     "sd": 1,
+     "tg": "Boss",
+     "m": 0.75,
+     "a": 0.0
+    }
+   ]
+  ]
+ },
+ "GeneralAttacksTwice": {
+  "name": "Lightning Slash",
+  "desc": "The general attacks twice per round. The second attack's initiative is \"Last Strike\".",
+  "icon": "Lightning_slash2.png",
+  "minLevel": 45,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "double_attack",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 0.0
+    }
+   ]
+  ]
+ },
+ "GetRecruits": {
+  "name": "Hostile Takeover",
+  "desc": "When this army wins a battle, gain 1 recruit mercenary per {0} XP worth of enemies defeated.",
+  "icon": "Hostile_takeover.png",
+  "minLevel": 26,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "GetStarCoins": {
+  "name": "Bounty Hunter",
+  "desc": "After completing an adventure, gain 1 star coin per {0} XP worth of enemies defeated by this army.",
+  "icon": "Bounty_hunter.png",
+  "minLevel": 45,
+  "combat": false,
+  "levels": [
+   []
+  ]
+ },
+ "IncreaseAccuracy": {
+  "name": "Master Planner",
+  "desc": "Adds {3}% to this army's accuracy.",
+  "icon": "Master_planner.png",
+  "minLevel": 45,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "acc",
+     "sd": 0,
+     "tg": "",
+     "m": 0.0,
+     "a": 10.0
+    }
+   ]
+  ]
+ },
+ "IncreaseADEveryRound": {
+  "name": "Battle Frenzy",
+  "desc": "Increases attack damage of this army by {3}% after every combat round.",
+  "icon": "Battle_frenzy.png",
+  "minLevel": 33,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "battle_frenzy",
+     "sd": 0,
+     "tg": "",
+     "m": 0.0,
+     "a": 10.0
+    }
+   ],
+   [
+    {
+     "it": "battle_frenzy",
+     "sd": 0,
+     "tg": "",
+     "m": 0.0,
+     "a": 20.0
+    }
+   ],
+   [
+    {
+     "it": "battle_frenzy",
+     "sd": 0,
+     "tg": "",
+     "m": 0.0,
+     "a": 30.0
+    }
+   ]
+  ]
+ },
+ "IncreaseBowmanMaximumAD": {
+  "name": "Rapid Fire",
+  "desc": "Increases maximum attack damage of your bowmen by {3}.",
+  "icon": "Rapid_fire.png",
+  "minLevel": 19,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Bowman",
+     "m": 0.0,
+     "a": 5.0
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Bowman",
+     "m": 0.0,
+     "a": 10.0
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Bowman",
+     "m": 0.0,
+     "a": 15.0
+    }
+   ]
+  ]
+ },
+ "IncreaseCapacity": {
+  "name": "Garrison Annex",
+  "desc": "Increases unit capacity by {3}.",
+  "icon": "Garrison_annex.png",
+  "minLevel": 41,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ],
+  "cap": [
+   5,
+   10,
+   15
+  ]
+ },
+ "IncreaseCombatSpeed": {
+  "name": "Confident Leader",
+  "desc": "Reduces the length of combat rounds by {0}%.",
+  "icon": "Confident_leader.png",
+  "minLevel": 41,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "IncreaseEliteSoldierSplashAndAD": {
+  "name": "Cleave",
+  "desc": "Increases the attack damage of your elite soldiers by {3}, and gives their attacks a {8}% chance of dealing splash damage.",
+  "icon": "Cleave.png",
+  "minLevel": 41,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 4.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 4.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 0.0,
+     "c": 0.33
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 8.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 8.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 0.0,
+     "c": 0.66
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 12.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 12.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "EliteSoldier",
+     "m": 0.0,
+     "a": 0.0
+    }
+   ]
+  ]
+ },
+ "IncreaseGeneralSplashAndAD": {
+  "name": "Juggernaut",
+  "desc": "Increases the general's attack damage by {3}, and gives his/her attacks a {8}% chance of dealing splash damage.",
+  "icon": "Jaggernaut.png",
+  "minLevel": 19,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 20.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 20.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 0.0,
+     "c": 0.33
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 40.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 40.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 0.0,
+     "c": 0.66
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 60.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 60.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "CombatGeneral",
+     "m": 0.0,
+     "a": 0.0
+    }
+   ]
+  ]
+ },
+ "IncreaseHeavyAD": {
+  "name": "Weekly Maintenance",
+  "desc": "Increases attack damage of your heavy units by {3}.",
+  "icon": "Weekly_maintenance.png",
+  "minLevel": 41,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Heavy",
+     "m": 0.0,
+     "a": 10.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Heavy",
+     "m": 0.0,
+     "a": 10.0
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Heavy",
+     "m": 0.0,
+     "a": 20.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Heavy",
+     "m": 0.0,
+     "a": 20.0
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Heavy",
+     "m": 0.0,
+     "a": 30.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Heavy",
+     "m": 0.0,
+     "a": 30.0
+    }
+   ]
+  ]
+ },
+ "IncreaseLongbowmanAndMarksmanAD": {
+  "name": "Sniper Training",
+  "desc": "Increases your longbowmen's and regular marksmen's minimum attack damage by {4}%, and the maximum by {0}%.",
+  "icon": "Sniper Training_new.png",
+  "minLevel": 26,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Longbowman",
+     "m": 1.05,
+     "a": 0.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Longbowman",
+     "m": 1.45,
+     "a": 0.0
+    },
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Marksman",
+     "m": 1.05,
+     "a": 0.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Marksman",
+     "m": 1.45,
+     "a": 0.0
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Longbowman",
+     "m": 1.1,
+     "a": 0.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Longbowman",
+     "m": 1.85,
+     "a": 0.0
+    },
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Marksman",
+     "m": 1.1,
+     "a": 0.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Marksman",
+     "m": 1.85,
+     "a": 0.0
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Longbowman",
+     "m": 1.15,
+     "a": 0.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Longbowman",
+     "m": 2.3,
+     "a": 0.0
+    },
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Marksman",
+     "m": 1.15,
+     "a": 0.0
+    },
+    {
+     "it": "dmin",
+     "sd": 0,
+     "tg": "Marksman",
+     "m": 2.3,
+     "a": 0.0
+    }
+   ]
+  ]
+ },
+ "IncreasePeacefulMovementSpeed": {
+  "name": "Jog",
+  "desc": "Adds {0}% to the general's movement speed when returning to or transferring the garrison.",
+  "icon": "Jog.png",
+  "minLevel": 19,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "IncreaseRecoverySpeed": {
+  "name": "Just a Flesh Wound",
+  "desc": "Reduces the general's recovery time by {0}%.",
+  "icon": "Just_a_flesh_wound.png",
+  "minLevel": 33,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "IncreaseSwiftSplashAndAD": {
+  "name": "Unstoppable Charge",
+  "desc": "Increases maximum attack damage of your swift units by {3}, and gives their attacks a {4}% chance of dealing splash damage.",
+  "icon": "Unstoppable_Charge3.png",
+  "minLevel": 33,
+  "combat": true,
+  "levels": [
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Swift",
+     "m": 0.0,
+     "a": 1.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "Swift",
+     "m": 0.0,
+     "a": 0.0,
+     "c": 0.33
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Swift",
+     "m": 0.0,
+     "a": 2.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "Swift",
+     "m": 0.0,
+     "a": 0.0,
+     "c": 0.66
+    }
+   ],
+   [
+    {
+     "it": "dmax",
+     "sd": 0,
+     "tg": "Swift",
+     "m": 0.0,
+     "a": 3.0
+    },
+    {
+     "it": "gain_splash",
+     "sd": 0,
+     "tg": "Swift",
+     "m": 0.0,
+     "a": 0.0
+    }
+   ]
+  ]
+ },
+ "IncreaseTravelSpeed": {
+  "name": "Navigation Crash Course",
+  "desc": "Reduces the general's travel time by {0}%.",
+  "icon": "Navigation_crash_course.png",
+  "minLevel": 26,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "IncreaseXP": {
+  "name": "Fast Learner",
+  "desc": "Increases XP gained from enemy units defeated by this army by {0}%.",
+  "icon": "Fast_Learner.png",
+  "minLevel": 33,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "InstantRecovery": {
+  "name": "1-Up",
+  "desc": "The general recovers instantly after his/her first defeat in every adventure.",
+  "icon": "1-Up.png",
+  "minLevel": 45,
+  "combat": false,
+  "levels": [
+   []
+  ]
+ },
+ "ResurrectLosses": {
+  "name": "First Aid",
+  "desc": "Recovers {0}% of lost units after every battle.",
+  "icon": "First_aid.png",
+  "minLevel": 19,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "TransporterCapacity_Bronze": {
+  "name": "Logistics Apprentice",
+  "desc": "Increases unit capacity by {3}.",
+  "icon": "Logistics_Apprentice.png",
+  "minLevel": 19,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ],
+  "cap": [
+   65,
+   130,
+   200
+  ]
+ },
+ "TransporterCapacity_Gold": {
+  "name": "Logistics Master",
+  "desc": "Increases unit capacity by {3}.",
+  "icon": "Logistics_Journeyman.png",
+  "minLevel": 41,
+  "combat": false,
+  "levels": [
+   []
+  ],
+  "cap": [
+   450
+  ]
+ },
+ "TransporterCapacity_Silver": {
+  "name": "Logistics Journeyman",
+  "desc": "Increases unit capacity by {3}.",
+  "icon": "Logistics_Master.png",
+  "minLevel": 26,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ],
+  "cap": [
+   115,
+   230,
+   350
+  ]
+ },
+ "TransporterTravelSpeed_Bronze": {
+  "name": "Navigation Apprentice",
+  "desc": "Reduces the general's travel time by {0}%.",
+  "icon": "Navigation_Apprentice.png",
+  "minLevel": 19,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "TransporterTravelSpeed_Gold": {
+  "name": "Navigation Master",
+  "desc": "Reduces the general's remaining travel time by {0}%.",
+  "icon": "Navigation_Journeyman.png",
+  "minLevel": 41,
+  "combat": false,
+  "levels": [
+   []
+  ]
+ },
+ "TransporterTravelSpeed_Silver": {
+  "name": "Navigation Journeyman",
+  "desc": "Reduces the general's remaining travel time by {0}%.",
+  "icon": "Navigation_Master.png",
+  "minLevel": 26,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "TravelBoost": {
+  "name": "generalTalentNames.TravelBoost",
+  "desc": "generalTalentDescriptions.TravelBoost",
+  "icon": "SmallIconStar",
+  "minLevel": 0,
+  "combat": false,
+  "levels": [
+   [],
+   [],
+   []
+  ]
+ },
+ "TravelBoost_BlackTree": {
+  "name": "generalTalentNames.TravelBoost_BlackTree",
+  "desc": "generalTalentDescriptions.TravelBoost_BlackTree",
+  "icon": "SmallIconStar",
+  "minLevel": 0,
+  "combat": false,
+  "levels": [
+   []
+  ]
+ },
+ "TravelBoost_DoggyBag": {
+  "name": "generalTalentNames.TravelBoost_DoggyBag",
+  "desc": "generalTalentDescriptions.TravelBoost_DoggyBag",
+  "icon": "SmallIconStar",
+  "minLevel": 0,
+  "combat": false,
+  "levels": [
+   []
+  ]
+ }
+}

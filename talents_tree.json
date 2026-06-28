@@ -1,0 +1,49 @@
+{
+ "maxPoints": 21,
+ "maxPerRow": [
+  3,
+  3,
+  3,
+  3,
+  1
+ ],
+ "rowUnlockBelow": [
+  0,
+  5,
+  10,
+  15,
+  20
+ ],
+ "rows": [
+  [
+   "IncreaseBowmanMaximumAD",
+   "IncreaseGeneralSplashAndAD",
+   "ResurrectLosses",
+   "IncreasePeacefulMovementSpeed"
+  ],
+  [
+   "IncreaseLongbowmanAndMarksmanAD",
+   "DescreaseBossHP",
+   "GetRecruits",
+   "IncreaseTravelSpeed"
+  ],
+  [
+   "IncreaseSwiftSplashAndAD",
+   "IncreaseADEveryRound",
+   "IncreaseXP",
+   "IncreaseRecoverySpeed"
+  ],
+  [
+   "IncreaseEliteSoldierSplashAndAD",
+   "IncreaseHeavyAD",
+   "IncreaseCapacity",
+   "IncreaseCombatSpeed"
+  ],
+  [
+   "GeneralAttacksTwice",
+   "IncreaseAccuracy",
+   "GetStarCoins",
+   "InstantRecovery"
+  ]
+ ]
+}

@@ -1,0 +1,36 @@
+{
+  "_comment": "Abenteuer, die NUR mit Spezial-Einheiten (Schwertkämpfer…Belagerer) bereist werden, als \"<adventure-id>\": \"special\" eintragen. Quelle: tsowiki-Feld elite_units (https://tsowiki.eu/data/adventures/<Id>.json). Nicht aufgeführte Abenteuer gelten als \"normal\" (Rekrut…Kanonier).",
+
+  "1001NightsWoodcutter": "special",
+  "1001NightsFirstThief": "special",
+  "1001NightsSecondThief": "special",
+  "1001NightsThirdThief": "special",
+  "1001NightsPrincess": "special",
+  "1001NightsOilLamp": "special",
+  "1001NightsTreasureKnowledge": "special",
+  "1001NightsTreasureWisdom": "special",
+  "1001NightsBesiegedCity": "special",
+  "1001NightsSeaSnake": "special",
+
+  "BuffAdventures_Evil_Queen_Snow_White": "special",
+  "BuffAdventures_Evil_Queen_Red_Riding_Hood": "special",
+  "BuffAdventures_Evil_Queen_Hansel_Gretel": "special",
+  "BuffAdventures_Evil_Queen_Fisherman": "special",
+  "BuffAdventures_Evil_Queen_Piper_of_Hamelin": "special",
+
+  "BuffAdventures_TMC_A_giant_Battle": "special",
+  "BuffAdventures_TMC_At_the_Foot_of_the_Mountain": "special",
+  "BuffAdventures_TMC_Mountain_Labyrinth": "special",
+  "BuffAdventures_TMC_The_People_of_the_Mountain": "special",
+  "BuffAdventures_TMC_Unknown_Regions": "special",
+
+  "BuffAdventures_OneStepAhead": "special",
+  "BuffAdventures_LostCity": "special",
+  "BonabertiBusiness": "special",
+  "SplitCityFall": "special",
+  "PartyCrashers": "special",
+  "XMAS_Cookie_Hard_2": "special",
+  "HalloweenEvent_InvadingZombies": "special",
+
+  "Archipelago": "special"
+}

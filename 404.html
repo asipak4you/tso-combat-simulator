@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- © 2026 Dennis Thielsch – Alle Rechte vorbehalten / All rights reserved. Siehe LICENSE.
+     GitHub-Pages-404: leitet bekannte Alt-Links (z.B. /dso_kampfsimulator) auf die Basis-URL,
+     zeigt sonst eine freundliche 404-Seite. -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page not found – The Settlers Online Combat Simulator</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<script>
+  // Bekannte alte externe Links auf die Basis-URL umleiten (Query/Hash übernehmen).
+  // Erkennt z.B. /dso_kampfsimulator in beliebiger Schreibweise und mit Unterpfaden.
+  (function () {
+    var legacy = /^\/dso[_-]?kampfsimulator(\/|$)/i;
+    if (legacy.test(location.pathname)) {
+      location.replace("https://settlersonlinesimulator.com/" + location.search + location.hash);
+    }
+  })();
+</script>
+<style>
+  :root { --bg:#cfe1d1; --fg:#392719; --mut:#745238; --acc:#745238;
+          --card:#f2ead7; --line:#cdbb95; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         font:15px/1.5 system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:9px;
+         padding:28px 32px; max-width:460px; text-align:center; margin:16px; }
+  h1 { margin:0 0 6px; font-size:48px; color:var(--mut); }
+  h2 { margin:0 0 14px; font-size:19px; }
+  p { color:var(--mut); margin:0 0 18px; }
+  a.home { display:inline-block; padding:8px 16px; border-radius:7px; background:var(--acc);
+           color:#fff; text-decoration:none; font-weight:600; }
+  a.home:hover { filter:brightness(1.1); }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>404</h1>
+  <h2>This page doesn't exist.</h2>
+  <p>The address you requested could not be found. The link may be outdated.</p>
+  <a class="home" href="https://settlersonlinesimulator.com/">Go to the combat simulator</a>
+</div>
+</body>
+</html>

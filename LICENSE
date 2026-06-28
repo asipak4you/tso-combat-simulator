@@ -1,0 +1,39 @@
+Copyright (c) 2026 Dennis Thielsch. Alle Rechte vorbehalten / All rights reserved.
+
+=== Deutsch ===
+
+Diese Software und ihr gesamter Quellcode – einschließlich der
+WebAssembly-Binärdateien (z. B. tso.wasm, tso.js), der JavaScript-, HTML- und
+CSS-Dateien sowie der Algorithmus-Dokumentation – sind urheberrechtlich
+geschützt.
+
+Es wird KEINE Erlaubnis erteilt, diesen Code oder Teile davon zu kopieren, zu
+verändern, weiterzugeben, zu veröffentlichen, zu dekompilieren/zurückzuentwickeln
+oder davon abgeleitete Werke zu erstellen, ohne vorherige ausdrückliche
+schriftliche Genehmigung des Rechteinhabers.
+
+Die Nutzung der öffentlich erreichbaren Website (settlersonlinesimulator.com) im
+Browser ist selbstverständlich gestattet.
+
+Markenhinweis: „Die Siedler Online" / „The Settlers Online" sowie zugehörige
+Namen und Bezeichnungen sind Marken bzw. Eigentum von Ubisoft Entertainment /
+Blue Byte. Dieses Projekt ist ein inoffizielles, nichtkommerzielles Fan-Tool und
+steht in keiner Verbindung zu Ubisoft oder Blue Byte.
+
+=== English ===
+
+This software and all of its source code — including the WebAssembly binaries
+(e.g. tso.wasm, tso.js), the JavaScript, HTML and CSS files, and the algorithm
+documentation — are protected by copyright.
+
+NO permission is granted to copy, modify, distribute, publish, decompile/reverse-
+engineer, or create derivative works from this code or any portion of it without
+the prior express written consent of the copyright holder.
+
+Using the publicly hosted website (settlersonlinesimulator.com) in a browser is
+of course permitted.
+
+Trademark notice: "Die Siedler Online" / "The Settlers Online" and related names
+are trademarks and property of Ubisoft Entertainment / Blue Byte. This project is
+an unofficial, non-commercial fan tool and is not affiliated with Ubisoft or
+Blue Byte.

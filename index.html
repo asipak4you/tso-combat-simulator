@@ -1,0 +1,79 @@
+<!doctype html>
+<!-- © 2026 Dennis Thielsch – Alle Rechte vorbehalten / All rights reserved.
+     Kein Kopieren/Verändern ohne schriftliche Genehmigung. Siehe LICENSE. -->
+<html lang="de">
+<head>
+<base href="/" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Die Siedler Online Kampfsimulator – Räuberlager der Heimatinsel</title>
+<meta name="description" content="Simuliere deine Kämpfe in Die Siedler Online exakt: Räuberlager der Heimatinsel wählen, eigene Truppen eintragen und Siegrate, Verluste und Überlebende berechnen – kostenlos im Browser, ohne Anmeldung." />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="canonical" href="https://settlersonlinesimulator.com/" />
+<link rel="alternate" hreflang="de" href="https://settlersonlinesimulator.com/" />
+<link rel="alternate" hreflang="en" href="https://settlersonlinesimulator.com/en/" />
+<link rel="alternate" hreflang="pl" href="https://settlersonlinesimulator.com/pl/" />
+<link rel="alternate" hreflang="x-default" href="https://settlersonlinesimulator.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Die Siedler Online Kampfsimulator" />
+<meta property="og:url" content="https://settlersonlinesimulator.com/" />
+<meta property="og:title" content="Die Siedler Online Kampfsimulator – Räuberlager der Heimatinsel" />
+<meta property="og:description" content="Simuliere deine Kämpfe in Die Siedler Online exakt: Räuberlager wählen, Truppen eintragen und Siegrate, Verluste und Überlebende berechnen – kostenlos im Browser." />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_GB" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta name="twitter:card" content="summary" />
+<link rel="stylesheet" href="./style.css?v=20260628111218" />
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <h1 id="title">Die Siedler Online – Kampfsimulator</h1>
+    <div class="lang">
+      <button class="flag" id="lang-de" title="Deutsch">🇩🇪</button>
+      <button class="flag" id="lang-en" title="English">🇬🇧</button>
+      <button class="flag" id="lang-pl" title="Polski">🇵🇱</button>
+    </div>
+  </div>
+  <nav class="nav" id="nav"></nav>
+
+  <div class="beta" id="betanote"></div>
+
+  <div class="cols2">
+    <div class="panel a">
+      <div class="ph3"><span class="ph3-left"><span id="head_a">Deine Truppen</span> <span class="hint" id="hint_a">(Angreifer)</span><span class="modetoggle"><button type="button" id="mode-manual" class="modebtn on">Manuell</button><button type="button" id="mode-auto" class="modebtn">Auto</button></span></span>
+        <button class="reset" data-reset="a">zurücksetzen</button></div>
+      <div id="wavetabs" class="wavetabs"></div>
+      <div class="genrow"><span class="nm" id="genlabel">General</span><select id="gen"></select></div>
+      <button type="button" id="talentbtn" class="talentbtn"></button>
+      <div id="talents" class="talents" hidden></div>
+      <div class="genrow steprow" id="steprow" hidden><span class="nm" id="steplabel">Schrittweite</span><select id="autostep"></select><label class="automax"><input type="checkbox" id="automax" checked><span id="automaxlabel">Nur volle Armee</span></label></div>
+      <div class="capinfo" id="capinfo"></div>
+      <div id="side_a"></div>
+    </div>
+    <div class="panel b">
+      <div class="ph3"><span><span id="head_b">Gegner</span> <span class="hint" id="hint_b">(Verteidiger)</span></span>
+        <button class="reset" data-reset="b">zurücksetzen</button></div>
+      <div class="genrow"><span class="nm" id="advlabel">Abenteuer</span>
+        <span class="advbox"><input id="advsearch" type="search" placeholder="Abenteuer suchen…"><select id="adv"></select></span></div>
+      <div class="genrow"><span class="nm" id="camplabel">Lager</span><select id="camp"></select></div>
+      <div id="side_b"></div>
+    </div>
+  </div>
+
+  <button class="go" id="go">Berechnen</button>
+  <button class="go2" id="suggestbtn" hidden>Hall of Fame</button>
+
+  <div id="out"></div>
+
+  <footer class="foot">
+    <a href="impressum.html" id="imprintlink">Impressum</a> ·
+    <a href="datenschutz.html" id="privacylink">Datenschutz</a> ·
+    <a href="#" id="cookielink" onclick="openConsent();return false;">Cookie-Einstellungen</a>
+  </footer>
+</div>
+<div id="tip" class="tip" hidden></div>
+<script src="consent.js?v=20260628111218"></script>
+<script type="module" src="./app.js?v=20260628111218"></script>
+</body>
+</html>
